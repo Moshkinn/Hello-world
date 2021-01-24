@@ -1,5 +1,5 @@
 <?php
-	echo "Michael!";
-	echo " בא נעשה איזה אתר ביחד כל מה תעשה כאן אנחנו נראה ברשת הפנימית שלנו בכתובת 192.168.1.10 כמובן לאחר שנעדכן את הספרייה בשרת<br>";
-
+$doc = new DOMDocument();
+$doc->loadHTMLFile("index.html");
+echo $doc->saveHTML();
 ?>
